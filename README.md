@@ -39,7 +39,17 @@
   overflow: hidden (on containter)
   ```
 - **_Custom media queries on css framework_**
+
   > https://stackoverflow.com/questions/45847090/media-queries-in-material-ui-components
+
+- **_Vertical Center_**
+  > https://davidwalsh.name/css-vertical-center
+  ```
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    overflow: hidden;
+  ```
 
 ---
 
@@ -86,5 +96,9 @@
   ```
   npm install -g win-node-env
   ```
+
+- **_if there is error on console.log [forwardRef (container)]_**
+  > its means that there is an empty active container,
+  > disable the whole container or fill it with something
 
 ---
