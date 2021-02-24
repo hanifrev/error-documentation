@@ -32,7 +32,7 @@
 
 ---
 
-### Vanila CSS
+### Vanilla CSS
 
 - **_Prevent page margin expand_**
   ```
@@ -43,13 +43,30 @@
   > https://stackoverflow.com/questions/45847090/media-queries-in-material-ui-components
 
 - **_Vertical Center_**
+
   > https://davidwalsh.name/css-vertical-center
+
   ```
     top: 50%;
     transform: translateY(-50%);
     position: relative;
     overflow: hidden;
   ```
+
+  ANOTHER METHOD
+
+  ```
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  ```
+
+  - **_Overflow hidden on position:absolute_**
+
+  > put overflow: hidden on the content that contain position:absoulute, or on it's container
+  > https://stackoverflow.com/questions/5513382/absolute-position-and-overflowhidden
 
 ---
 
@@ -85,7 +102,7 @@
         {`
       	    #__next { overflow: hidden }
           `}
-    		</style>
+    	</style>
   ....
   </Root>
   ```
