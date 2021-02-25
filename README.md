@@ -61,9 +61,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%; //optional, if the content and image position are broken
   ```
 
-  - **_Overflow hidden on position:absolute_**
+- **_Overflow hidden on position:absolute_**
 
   > put overflow: hidden on the content that contain position:absoulute, or on it's container
   > https://stackoverflow.com/questions/5513382/absolute-position-and-overflowhidden
