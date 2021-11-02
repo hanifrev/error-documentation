@@ -119,4 +119,17 @@
   > its means that there is an empty active container,
   > disable the whole container or fill it with something
 
+- **_next/image Unconfigured Host_**
+  > https://nextjs.org/docs/messages/next-image-unconfigured-host
+
+  Add the hostname of your URL to the images.domains config in next.config.js
+
+  ```
+  module.exports = {
+    images: {
+      domains: ['assets.example.com'],
+    },
+  }
+  ```
+
 ---
