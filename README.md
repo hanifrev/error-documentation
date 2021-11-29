@@ -132,4 +132,20 @@
   }
   ```
 
+- **_Dynamic Routing getServerSideProps_**
+
+  >
+  https://github.com/vercel/next.js/discussions/13309
+  https://stackoverflow.com/questions/61222726/dynamic-routing-with-getserversideprops-in-nextjs/61240697#61240697
+  ```
+  export async function getServerSideProps(context) {
+  const { id } = context.query;
+  const res = await fetch(`https://restcountries.eu/rest/v2/name/${id}`);
+  const country = await res.json();
+
+  console.log(`Fetched place: ${country.name}`);
+  return { props: { country } };
+}
+  ```
+
 ---
