@@ -145,7 +145,13 @@
 
   console.log(`Fetched place: ${country.name}`);
   return { props: { country } };
-}
+
   ```
+- **_Data Fetching_**
+  >
+  https://stackoverflow.com/a/69075605/11358449
+  >
+  
+  > You can only use getInitialProps, getServerSideProps, getStaticProps in Next.js PAGES folder, these methods will not work outside pages folder
 
 ---
