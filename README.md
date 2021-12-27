@@ -76,6 +76,9 @@
 - **_Intellisense_**
   > if not working try to disable, reload, then enable, reload ctrl + space to view
 
+- **_Tailwind not working_**
+  > check tailwind.config, on purge, usually missing  path (src), try this:
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}','./src/components/**/*.{js,ts,jsx,tsx}'],
 ---
 
 ### NextJS
