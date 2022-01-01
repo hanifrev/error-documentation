@@ -157,4 +157,20 @@
   
   > You can only use getInitialProps, getServerSideProps, getStaticProps in Next.js PAGES folder, these methods will not work outside pages folder
 
+- **_Get query string params from URL_**
+  >
+  https://stackoverflow.com/a/61969441/11358449
+  >
+  Use getInitialProps methods, 
+  ```
+  const Index = ({id}) => {
+  return(<div>{id}</div>)
+  }
+
+  Index.getInitialProps = async ({ query }) => {
+    const {id} = query
+
+    return {id}
+  }
+  ```
 ---
