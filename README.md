@@ -29,6 +29,16 @@
   ```
   "build": "webpack --mode=production && echo '/* /index.html 200' | cat >dist/_redirects",
   ```
+- **_Cannot read property 'map' of undefined with react hooks_**
+  > https://stackoverflow.com/a/55667055/11358449
+  > https://www.debuggr.io/react-map-of-undefined/
+
+  Add inline If with Logical && Operator (https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator)
+  ```
+  {items && items.map(item => {
+    return <div key={item.id}>{item.title}</div>;
+  })}
+  ```
 
 ---
 
