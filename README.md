@@ -79,6 +79,8 @@
   > put overflow: hidden on the content that contain position:absoulute, or on it's container
   > https://stackoverflow.com/questions/5513382/absolute-position-and-overflowhidden
 
+- **_CSS Ternary Operator_**
+  > https://stackoverflow.com/a/66387037/11358449
 ---
 
 ### Tailwind CSS
