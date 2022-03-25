@@ -29,18 +29,33 @@
   ```
   "build": "webpack --mode=production && echo '/* /index.html 200' | cat >dist/_redirects",
   ```
+
 - **_Cannot read property 'map' of undefined with react hooks_**
-  > https://stackoverflow.com/a/55667055/11358449
-  > https://www.debuggr.io/react-map-of-undefined/
+
+  > https://stackoverflow.com/a/55667055/11358449 > https://www.debuggr.io/react-map-of-undefined/
 
   Add inline If with Logical && Operator (https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator)
+
   ```
   {items && items.map(item => {
     return <div key={item.id}>{item.title}</div>;
   })}
   ```
 
+- **_Put two state on event/function/attribute_**
+
+  > https://stackoverflow.com/questions/68380457/setting-two-state-variable-onclick-in-react
+
+  ```
+  onClick={() => {
+      setState1(true);
+      setState2(false)
+      }
+    }
+  ```
+
 ---
+
 ### Javascript Related
 
 - **_Get unique value_**
@@ -51,6 +66,7 @@
   const numbers = [2,3,4,4,2,3,3,4,4,5,5,6,6,7,5,32,3,4,5]
   console.log([...new Set(numbers)]) // [2, 3, 4, 5, 6, 7, 32]
   ```
+
 ---
 
 ### Vanilla CSS
@@ -92,16 +108,19 @@
 
 - **_CSS Ternary Operator_**
   > https://stackoverflow.com/a/66387037/11358449
+
 ---
 
 ### Tailwind CSS
 
 - **_Intellisense_**
+
   > if not working try to disable, reload, then enable, reload ctrl + space to view
 
 - **_Tailwind not working_**
-  > check tailwind.config, on purge, usually missing  path (src), try this:
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}','./src/components/**/*.{js,ts,jsx,tsx}'],
+  > check tailwind.config, on purge, usually missing path (src), try this:
+  > purge: ['./pages/**/*.{js,ts,jsx,tsx}','./src/components/**/*.{js,ts,jsx,tsx}'],
+
 ---
 
 ### NextJS
@@ -142,10 +161,12 @@
   ```
 
 - **_if there is error on console.log [forwardRef (container)]_**
+
   > its means that there is an empty active container,
   > disable the whole container or fill it with something
 
 - **_next/image Unconfigured Host_**
+
   > https://nextjs.org/docs/messages/next-image-unconfigured-host
 
   Add the hostname of your URL to the images.domains config in next.config.js
@@ -160,9 +181,8 @@
 
 - **_Dynamic Routing getServerSideProps_**
 
-  >
-  https://github.com/vercel/next.js/discussions/13309
-  https://stackoverflow.com/questions/61222726/dynamic-routing-with-getserversideprops-in-nextjs/61240697#61240697
+  > https://github.com/vercel/next.js/discussions/13309 > https://stackoverflow.com/questions/61222726/dynamic-routing-with-getserversideprops-in-nextjs/61240697#61240697
+
   ```
   export async function getServerSideProps(context) {
   const { id } = context.query;
@@ -173,18 +193,19 @@
   return { props: { country } };
 
   ```
+
 - **_Data Fetching_**
-  >
-  https://stackoverflow.com/a/69075605/11358449
-  >
-  
+
+  > https://stackoverflow.com/a/69075605/11358449
+
   > You can only use getInitialProps, getServerSideProps, getStaticProps in Next.js PAGES folder, these methods will not work outside pages folder
 
 - **_Get query string params from URL_**
+
+  > https://stackoverflow.com/a/61969441/11358449
   >
-  https://stackoverflow.com/a/61969441/11358449
-  >
-  Use getInitialProps methods, 
+  > Use getInitialProps methods,
+
   ```
   const Index = ({id}) => {
   return(<div>{id}</div>)
@@ -196,4 +217,5 @@
     return {id}
   }
   ```
+
 ---
