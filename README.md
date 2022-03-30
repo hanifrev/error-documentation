@@ -107,7 +107,16 @@
   > https://stackoverflow.com/questions/5513382/absolute-position-and-overflowhidden
 
 - **_CSS Ternary Operator_**
+
   > https://stackoverflow.com/a/66387037/11358449
+
+- **_Image Resize & Keep Aspect ratio_**
+  ```
+      object-fit: cover;
+      width: 100%;
+      height: 250px;
+  ```
+  > https://stackoverflow.com/a/39039206
 
 ---
 
